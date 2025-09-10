@@ -12,10 +12,10 @@ const icon = new L.Icon({
 });
 
 export default function MapPage() {
-  const center = [37.5665, 126.9780]; // 서울 시청
+  const center = [37.5665, 126.9780]; // 서울
   return (
     <main style={{ padding: 24 }}>
-      <h1>지도</h1>
+      <h1>지도 페이지</h1>
       <div style={{ height: 420, width: '100%', borderRadius: 8, overflow: 'hidden' }}>
         <MapContainer center={center} zoom={14} style={{ height: '100%', width: '100%' }}>
           <TileLayer
@@ -23,10 +23,15 @@ export default function MapPage() {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={center} icon={icon}>
-            <Popup>서울</Popup>
+            <Popup>서울 시청</Popup>
           </Marker>
         </MapContainer>
       </div>
     </main>
   );
 }
+
+
+
+
+

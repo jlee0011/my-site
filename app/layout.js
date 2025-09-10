@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import "leaflet/dist/leaflet.css";   // ✅ 여기 추가
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,3 +28,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
